@@ -1,0 +1,146 @@
+
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    line-height: 1.6; 
+    color: #333; 
+    background-color: #f4f4f4; 
+    padding: 20px; 
+}
+
+
+main, header {
+    background-color: #fff;
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 40px; 
+}
+
+
+header {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #333; 
+}
+
+main {
+    padding-top: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+}
+
+
+header h1 {
+    font-size: 36px;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    margin-bottom: 15px;
+    color: #000;
+}
+
+header p {
+    font-size: 14px;
+    color: #666; 
+    margin-bottom: 5px;
+}
+
+
+header p:last-child {
+    font-style: italic;
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+section {
+    margin-bottom: 30px; 
+}
+
+h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    color: #000;
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px; 
+}
+
+
+main > section {
+    grid-column: span 1; 
+}
+
+/* Якщо ви додасте секцію "Objective" (Мета), вона має бути на всю ширину: */
+/*
+section.objective {
+    grid-column: span 2;
+}
+*/
+
+article {
+    margin-bottom: 15px;
+}
+
+article h3 {
+    color: #555;
+    font-weight: normal;
+}
+
+article p strong {
+    color: #000;
+    font-size: 15px;
+}
+
+ul {
+    list-style-type: disc; 
+    margin-left: 20px; 
+}
+
+li {
+    font-size: 14px;
+    margin-bottom: 8px; 
+    color: #444;
+}
+
+a {
+    color: #0066cc; 
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr; /* Одна колонка */
+        padding: 20px;
+    }
+    
+    header {
+        padding: 20px;
+    }
+    
+    header h1 {
+        font-size: 28px;
+    }
+}
